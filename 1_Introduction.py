@@ -1,5 +1,6 @@
 """Streamlit is a frontend framework of python ecosystem"""
 import streamlit as st
+from PIL import Image
 
 
 def default_page_config():
@@ -29,6 +30,12 @@ def page_content():
     This function includes all of the page content
     such as information texts, code blocks exc.
     """
+
+    image_amazon = Image.open("sources/amazon.png")
+    image_facebook = Image.open("sources/facebook.png")
+    image_google = Image.open("sources/google.png")
+    images = [image_amazon, image_facebook, image_google]
+
     st.title("Learn Data Structures and Algorithms")
     st.write(
         "Welcome to Learn DS' and Algos. Here we begin a process where we will learn\
@@ -36,7 +43,7 @@ def page_content():
     )
     st.write(
         "In this process, we will both follow the relevant issues and examine the\
-              solutions to the questions about the interview questions, which are indispensable\
+              solutions to the questions about the technical coding interview questions, which are indispensable\
               in the applications of large companies."
     )
     st.write("**All codes are written in Python.**")
@@ -50,6 +57,25 @@ def page_content():
                    \n 11. Search Algorithms \n 12. Graph Algorithms \n 13. Greedy Algorithms\
                    \n 14. Divide and Conquer Algorithms"
     )
+
+    st.header("About Technical Coding Interviews")
+    st.write(
+        "Data Structures and Algorithms are not only a basic and must-know part of computer science,\
+              but also appear in business life."
+    )
+    st.write(
+        "These topics, which we come across in technical coding interviews of important companies,\
+              not only contribute to our progress in our business life, but are also fun!"
+    )
+    st.write(
+        "Below you can see the distribution of the questions asked by 3 big companies in their \
+              technical code interviews. You can also find the link below to the article where these \
+              pictures were taken for more information."
+    )
+    st.image(
+        images, use_column_width="always", caption=["Amazon", "Facebook", "Google"]
+    )
+    st.write("Source article [link](https://algo.monster/problems/stats)")
 
 
 def main():
