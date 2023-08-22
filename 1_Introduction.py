@@ -31,9 +31,9 @@ def page_content():
     such as information texts, code blocks exc.
     """
 
-    image_amazon = Image.open("sources/amazon.png")
-    image_facebook = Image.open("sources/facebook.png")
-    image_google = Image.open("sources/google.png")
+    image_amazon = Image.open("sources/introduction/amazon.png")
+    image_facebook = Image.open("sources/introduction/facebook.png")
+    image_google = Image.open("sources/introduction/google.png")
     images = [image_amazon, image_facebook, image_google]
 
     st.title("Learn Data Structures and Algorithms")

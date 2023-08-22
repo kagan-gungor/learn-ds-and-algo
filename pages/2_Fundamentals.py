@@ -29,10 +29,10 @@ def page_content():
     This function includes all of the page content
     such as information texts, code blocks exc.
     """
-    image_book1 = Image.open("sources/book1.jpg")
-    image_book2 = Image.open("sources/book2.jpg")
-    image_queue = Image.open("sources/queue.jpg")
-    image_ds = Image.open("sources/types_of_ds.png")
+    image_book1 = Image.open("sources/fundamentals/book1.jpg")
+    image_book2 = Image.open("sources/fundamentals/book2.jpg")
+    image_queue = Image.open("sources/fundamentals/queue.jpg")
+    image_ds = Image.open("sources/fundamentals/types_of_ds.png")
     images = [image_book1, image_book2]
 
     st.title("Fundamentals")

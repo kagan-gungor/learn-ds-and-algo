@@ -29,8 +29,8 @@ def page_content():
     This function includes all of the page content
     such as information texts, code blocks exc.
     """
-    image_runtime = Image.open("sources/runtime.jpg")
-    image_measure = Image.open("sources/measure_big_o.png")
+    image_runtime = Image.open("sources/big_o/runtime.jpg")
+    image_measure = Image.open("sources/big_o/measure_big_o.png")
     st.title("Big O")
     st.write(
         "Big O is the language and metric we use to describe the efficiency of algorithms. \
